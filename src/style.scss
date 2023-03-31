@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #252525;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 30px;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #252525;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #FFC600;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  max-width: 800px;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background-color: #FFFFFF;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #252525;
+}
+
+.description {
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.feature-list {
+  margin-bottom: 30px;
+}
+
+.feature-list h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #252525;
+}
+
+.feature-list ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFC600;
+  color: #252525;
+  font-size: 24px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  
+}
+.cta-animation {
+  animation: pulse .5s;
+}  
+
+
+.cta-button:hover {
+  background-color: #F5B100;
+  color: #FFFFFF;
+  cursor:pointer;
+}
+
+.counter {
+  margin: 30px 0 60px 0;
+  font-size: 24px;
+  color: #252525;
+}
+
+.counter span {
+  font-weight: bold;
+  color: #FFC600;
+  display: inline-block;
+  
+}
+
+.count-animation {
+  animation: count-up 0.5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes count-up {
+  0%  {
+    opacity: 0; 
+    transform: translateY(50px);
+  }
+  100%  {
+    opacity: 100; 
+    transform: translateY(0);
+  }
+}
